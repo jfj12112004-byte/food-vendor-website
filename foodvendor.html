@@ -1,0 +1,212 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FreshBite — Food Vendor</title>
+  <meta name="description" content="FreshBite — clean, modern food vendor website with animated UI and menu gallery." />  <!-- GOOGLE FONT --> 
+   <link href="foodvendor.css" rel="stylesheet">
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">FB</div>
+        <div>
+          <div style="font-weight:800">FreshBite</div>
+          <div style="font-size:12px;color:var(--muted)">Local flavors — delivered fresh</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" id="orderNowBtn">Order Now</a>
+      </nav>
+    </header><div class="hero">
+  <div class="hero-card">
+    <h1>Delicious meals — ready fast. Taste the best local and global bites.</h1>
+    <p class="lead">Browse our curated menu, place orders in seconds, and enjoy hot, fresh food delivered to you or ready for pickup.</p>
+    <div class="hero-cta">
+      <button class="btn primary" id="scrollMenu">Explore Menu</button>
+      <button class="btn ghost" id="openOrder">Quick Order</button>
+    </div>
+    <div class="promo" aria-hidden="true">
+      <div class="pill">🔥 Fast delivery</div>
+      <div class="pill">⭐ Rated 4.8</div>
+      <div class="pill">🥗 Healthy choices</div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card" style="padding:12px;">
+      <img src="https://images.unsplash.com/photo-1604908177522-71d17f2c5f6f?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="hero plate" style="height:260px; border-radius:12px; margin-bottom:12px; object-fit:cover">
+      <div style="display:flex; gap:10px; align-items:center; justify-content:space-between">
+        <div>
+          <div style="font-weight:700">Chef's special — Jollof Deluxe</div>
+          <div style="color:var(--muted); font-size:13px">Rice, grilled chicken, plantain & salad</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-weight:800">₦2,500</div>
+          <div style="color:var(--muted); font-size:12px">Order in 15 mins</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<section id="menu" class="section">
+  <h2 style="margin:0 0 12px">Our Menu</h2>
+  <p style="margin:0 0 16px; color:var(--muted)">Click any item to view details or add to cart.</p>
+
+  <div class="grid">
+    <!-- 10 food cards -->
+    <div class="card reveal delay-1" tabindex="0" data-title="Spicy Chicken Wrap" data-price="1200">
+      <div class="price-tag">₦1,200</div>
+      <img src="https://images.unsplash.com/photo-1604908177522-71d17f2c5f6f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Spicy Chicken Wrap">
+      <div class="card-body">
+        <div class="title">Spicy Chicken Wrap</div>
+        <div class="meta">Grilled chicken, spicy sauce, crisp veggies</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-2" tabindex="0" data-title="Jollof Rice & Chicken" data-price="2500">
+      <div class="price-tag">₦2,500</div>
+      <img src="https://images.unsplash.com/photo-1604908177430-3d7a1f4c6d7a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="Jollof Rice">
+      <div class="card-body">
+        <div class="title">Jollof Rice & Chicken</div>
+        <div class="meta">Smoky rice served with grilled chicken & plantain</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-3" tabindex="0" data-title="Sushi Platter" data-price="4200">
+      <div class="price-tag">₦4,200</div>
+      <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="Sushi Platter">
+      <div class="card-body">
+        <div class="title">Sushi Platter</div>
+        <div class="meta">Assorted nigiri & rolls — chef's selection</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-4" tabindex="0" data-title="Vegan Bowl" data-price="1800">
+      <div class="price-tag">₦1,800</div>
+      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4" alt="Vegan Bowl">
+      <div class="card-body">
+        <div class="title">Vegan Bowl</div>
+        <div class="meta">Quinoa, roasted veggies, tahini dressing</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-5" tabindex="0" data-title="Beef Burger" data-price="2200">
+      <div class="price-tag">₦2,200</div>
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5" alt="Beef Burger">
+      <div class="card-body">
+        <div class="title">Beef Burger</div>
+        <div class="meta">Juicy beef patty, cheddar & caramelized onions</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-6" tabindex="0" data-title="Pepper Soup" data-price="1400">
+      <div class="price-tag">₦1,400</div>
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6" alt="Pepper Soup">
+      <div class="card-body">
+        <div class="title">Pepper Soup</div>
+        <div class="meta">Spicy broth with fragrant local spices</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-7" tabindex="0" data-title="Pasta Alfredo" data-price="2000">
+      <div class="price-tag">₦2,000</div>
+      <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7" alt="Pasta Alfredo">
+      <div class="card-body">
+        <div class="title">Pasta Alfredo</div>
+        <div class="meta">Creamy fettuccine with parmesan & herbs</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-8" tabindex="0" data-title="Grilled Fish" data-price="3000">
+      <div class="price-tag">₦3,000</div>
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8" alt="Grilled Fish">
+      <div class="card-body">
+        <div class="title">Grilled Fish</div>
+        <div class="meta">Lemon butter, herbs & seasonal sides</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-9" tabindex="0" data-title="Plantain & Beans" data-price="900">
+      <div class="price-tag">₦900</div>
+      <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9" alt="Plantain & Beans">
+      <div class="card-body">
+        <div class="title">Plantain & Beans</div>
+        <div class="meta">Homestyle stewed beans with fried plantain</div>
+      </div>
+    </div>
+
+    <div class="card reveal delay-10" tabindex="0" data-title="Fish & Chips" data-price="2100">
+      <div class="price-tag">₦2,100</div>
+      <img src="https://images.unsplash.com/photo-1543779503-ec6c86b4e6d6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=10" alt="Fish & Chips">
+      <div class="card-body">
+        <div class="title">Fish & Chips</div>
+        <div class="meta">Crispy battered fish, fries & tartar sauce</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div style="font-weight:700">FreshBite</div>
+    <div style="color:var(--muted); font-size:13px">© 2025 FreshBite — All rights reserved</div>
+  </div>
+  <div class="badge">Open: 9am — 11pm</div>
+</footer>
+
+  </div>  <!-- modal (quick order) -->  <div class="modal" id="modal">
+    <div class="modal-card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px">
+        <div style="font-weight:800">Quick Order</div>
+        <button class="close" id="closeModal">Close ✕</button>
+      </div>
+      <div id="modalContent" style="color:var(--muted)">Select an item from the menu to see details here.</div>
+    </div>
+  </div>  <script>
+    // Smooth scroll to menu
+    document.getElementById('scrollMenu').addEventListener('click', ()=>document.getElementById('menu').scrollIntoView({behavior:'smooth'}));
+
+    const modal = document.getElementById('modal');
+    const modalContent = document.getElementById('modalContent');
+    const closeModal = document.getElementById('closeModal');
+    const openOrder = document.getElementById('openOrder');
+    const orderNow = document.getElementById('orderNowBtn');
+
+    const open = (html)=>{ modalContent.innerHTML = html; modal.classList.add('show'); }
+    closeModal.addEventListener('click', ()=>modal.classList.remove('show'));
+    window.addEventListener('click', (e)=>{ if(e.target===modal) modal.classList.remove('show'); });
+
+    // Add click listeners to cards
+    document.querySelectorAll('.card').forEach(card=>{
+      card.addEventListener('click', ()=>{
+        const title = card.dataset.title || card.querySelector('.title')?.innerText;
+        const price = card.dataset.price || card.querySelector('.price-tag')?.innerText;
+        const img = card.querySelector('img')?.src;
+        const meta = card.querySelector('.meta')?.innerText;
+        open(`\n          <div style="display:flex; gap:12px; align-items:center">\n            <img src="${img}" alt="${title}" style="width:120px; height:90px; object-fit:cover; border-radius:10px">\n            <div>\n              <div style="font-weight:800">${title}</div>\n              <div style="color:var(--muted); font-size:13px">${meta}</div>\n            </div>\n          </div>\n          <div style="margin-top:12px; display:flex; justify-content:space-between; align-items:center">\n            <div style="font-weight:900">${price}</div>\n            <div style="display:flex; gap:8px">\n              <button class="btn ghost" onclick="document.getElementById('modal').classList.remove('show')">Close</button>\n              <button class="btn primary" onclick=\"alert('Added to cart: ${title} — ${price}');document.getElementById('modal').classList.remove('show')\">Add to Cart</button>\n            </div>\n          </div>
+        `);
+      });
+    });
+
+    openOrder.addEventListener('click', ()=>{
+      open('<div style="font-weight:800; margin-bottom:6px">Quick Order</div><div style="color:var(--muted)">Choose an item from the menu below or call <strong>+234 800 000 0000</strong> to place a pickup order.</div>');
+    });
+
+    orderNow.addEventListener('click', ()=>{
+      open('<div style="font-weight:800">Place an Order</div><div style="margin-top:8px; color:var(--muted)">This demo opens a quick-order modal; connect this to your backend or payment gateway for real orders.</div>');
+    });
+
+    // Accessibility: keyboard open
+    document.querySelectorAll('.card').forEach(card=>{
+      card.addEventListener('keydown', (e)=>{ if(e.key==='Enter') card.click(); });
+    });
+  </script></body>
+</html>
